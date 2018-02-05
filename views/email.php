@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     mail($to, $subject, $message, $headers);
     mail($from, $subject, $message, $headers2);
 
-    echo "Mail sent!";
+    header("Location: http://wormdirtdevelopment.com");
 }
 
 ?>
