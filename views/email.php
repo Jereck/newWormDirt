@@ -11,7 +11,7 @@ if(isset($_POST['submit'])) {
     $headers = "From: " . $from;
     mail($to, $subject, $message, $headers);
 
-    header("Location: http://wormdirtdevelopment.com");
+    header("Location: http://www.wormdirtdevelopment.com");
 }
 
 ?>
