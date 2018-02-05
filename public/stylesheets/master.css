@@ -38,6 +38,7 @@ body{
 }
 
 .menu-ex-text {
+    position: absolute;
     color: #634832;
     opacity: 0;
 } .menu-ex-text a {
