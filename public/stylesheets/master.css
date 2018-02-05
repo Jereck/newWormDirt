@@ -1,0 +1,205 @@
+.typed-cursor{
+    display: none;
+    opacity: 0;
+}
+
+body{ 
+    margin-top: -75px !important;
+    background-color: #ece0d1 !important;
+    position: relative;
+}
+
+.menu-ex {
+    display: inline-block;
+    cursor: pointer;
+    position: sticky;
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+} 
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #634832;
+    box-shadow: 1px 1px 1px white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu-ex-text {
+    color: #634832;
+    opacity: 0;
+} .menu-ex-text a {
+    color: #634832;
+    text-decoration: none;
+} .menu-ex-text a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);    
+} .change .bar2 {
+    opacity: 0;
+} .change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+} .change .menu-ex-text {
+    -ms-transform: translate(40px, -45px); /* IE 9 */
+    -webkit-transform: translate(40px, -45px); /* Safari */
+    transform: translate(40px, -45px);
+    position: absolute;
+    opacity: 1;
+    transition: ease-in 1s;
+}
+
+body > div.menu-ex.change > div.menu-ex-text > a > i {
+    padding: 5px;
+}
+
+
+.headers{
+    font-family: 'Luckiest Guy', cursive;    
+}
+
+.info-text {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+}
+
+.hero-image{
+    background-image: url("../images/hero.jpg");
+
+    height: 75vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #38220f;
+    text-shadow: 2px 2px 2px white;
+    font-weight: bold;
+    font-size: 63px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.offerings {
+    padding: 150px 0px;
+} .offerings i {
+    color: #38220f; 
+}
+
+.headers{
+    padding-bottom: 20px;
+}
+
+.offer-text {
+    padding-top: 10px;
+    color: #967259;
+}
+
+.team-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.team-col{
+    position: relative;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.team-col img {
+    margin-top: 8px;
+    width: 100%;
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #38220f;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+}
+
+.team-col:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.over-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+} .over-text .over-title {
+    font-size: 3rem;
+} .over-text .over-subtitle {
+    font-size: 1.5rem;
+}
+
+.technologies {
+    padding: 50px 0px;
+    color: grey;
+} .technologies h1{
+    padding-bottom: 20px;
+}
+
+.contact {
+    margin: 100px 0px;
+}
+.contact-form {
+    border: 6px solid #38220f;
+    box-shadow: 4px 4px 2px #634832;
+    padding: 20px;
+    border-radius: 20px;
+}
+.btn-coffee{
+    background-color: #38220f;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+    background-color: #634832;
+} .footer p {
+    margin-bottom: -16px;
+}
+
+
+@media screen and (max-width: 766px){
+    .team-col {
+        flex: 100%;
+    }
+    .team-col img{
+        vertical-align: inherit;
+    }
+    .over-text .over-title{
+        font-size: 2rem;
+    } .over-text .over-subtitle {
+        font-size: 1rem;
+    }
+    .technologies {
+        display: none;
+    }
+}
