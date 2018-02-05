@@ -1,5 +1,6 @@
 <?php
-if (isset($_POST['submit'])) {
+
+if(isset($_POST['submit'])) {
     $to = "wormdirt@wormdirtdevelopment.com";
     $from = $_POST['email'];
     $subject = $_POST['subject'];
@@ -8,9 +9,7 @@ if (isset($_POST['submit'])) {
     $message .= 'Message: ' . $_POST['message'];
 
     $headers = "From: " . $from;
-    $headers2 = "From: " . $to;
     mail($to, $subject, $message, $headers);
-    mail($from, $subject, $message, $headers2);
 
     header("Location: http://wormdirtdevelopment.com");
 }
