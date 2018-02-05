@@ -37,10 +37,16 @@ body{
     transition: 0.4s;
 }
 
+.bars {
+    float: left;
+}
+
 .menu-ex-text {
     position: absolute;
     color: #634832;
     opacity: 0;
+    display: flex;
+    padding-left: 10px;
 } .menu-ex-text a {
     color: #634832;
     text-decoration: none;
@@ -58,9 +64,9 @@ body{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 } .change .menu-ex-text {
-    -ms-transform: translate(40px, -45px); /* IE 9 */
-    -webkit-transform: translate(40px, -45px); /* Safari */
-    transform: translate(40px, -45px);
+    -ms-transform: translate(40px, 0px); /* IE 9 */
+    -webkit-transform: translate(40px, 0px); /* Safari */
+    transform: translate(40px, 0px);
     position: absolute;
     opacity: 1;
     transition: ease-in 1s;
